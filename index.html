@@ -1,622 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-RW">
 <head>
-<!-- ===================== BASIC META ===================== -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
 
-<title>AbaFans | Rwanda Football Matches, Predictions & Where To Watch</title>
+  <!-- Basic -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AbaFans | Every Match. Every Fan.</title>
 
-<meta name="description" content="AbaFans is Rwanda's football matchday platform. See today's football matches, predict scores, and discover where to watch live games in Kigali and across Rwanda.">
+  <meta
+    name="description"
+    content="AbaFans helps football fans discover what's on tonight, where to watch matches, and what everyone is predicting. Never watch alone. Never miss a moment."
+  />
 
-<meta name="keywords" content="
-football Rwanda, 
-Rwanda football matches today, 
-World Cup Rwanda schedule, 
-where to watch football Kigali, 
-sports bars Kigali football, 
-football predictions Rwanda, 
-AbaFans, 
-live football Rwanda, 
-matchday Rwanda, 
-football venues Rwanda
-">
+  <meta
+    name="keywords"
+    content="football Rwanda, World Cup Rwanda, where to watch football Kigali, football predictions Rwanda, sports bars Kigali, football fans Rwanda, live football matches, matchday companion, AbaFans"
+  />
 
-<meta name="author" content="AbaFans">
+  <meta name="author" content="AbaFans" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 
-<meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://abafans.com/" />
 
-<link rel="canonical" href="https://abafans.rw/">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-<!-- ===================== THEME ===================== -->
-<meta name="theme-color" content="#E53935">
+  <!-- Theme -->
+  <meta name="theme-color" content="#1F2937" />
+  <meta name="color-scheme" content="dark" />
 
-<!-- ===================== OPEN GRAPH (FACEBOOK / WHATSAPP) ===================== -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AbaFans">
-<meta property="og:title" content="AbaFans | Rwanda Football Matches, Predictions & Where To Watch">
-<meta property="og:description" content="Follow today's football matches in Rwanda, predict scores, and discover where fans are watching live games.">
-<meta property="og:url" content="https://abafans.rw/">
-<meta property="og:image" content="https://abafans.rw/og-image.jpg">
+  <!-- Geo -->
+  <meta name="geo.region" content="RW" />
+  <meta name="geo.country" content="Rwanda" />
+  <meta name="geo.placename" content="Kigali" />
+  <meta name="ICBM" content="-1.9441,30.0619" />
 
-<!-- ===================== TWITTER CARD ===================== -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AbaFans | Rwanda Football Matchday Platform">
-<meta name="twitter:description" content="Matches, predictions, and where to watch football in Rwanda.">
-<meta name="twitter:image" content="https://abafans.rw/og-image.jpg">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AbaFans" />
+  <meta property="og:title" content="AbaFans | Every Match. Every Fan." />
 
-<!-- ===================== GEO TARGETING (RWANDA + CITIES) ===================== -->
-<meta name="geo.region" content="RW">
-<meta name="geo.country" content="Rwanda">
-<meta name="geo.placename" content="Kigali">
+  <meta
+    property="og:description"
+    content="What's on tonight? Where should you watch? What is everyone predicting? Join Rwanda's football fan community."
+  />
 
-<meta name="distribution" content="global">
-<meta name="language" content="en">
+  <meta property="og:url" content="https://abafans.com/" />
+  <meta property="og:image" content="https://abafans.com/og-image.jpg" />
 
-<!-- Helps local SEO intent -->
-<meta name="target" content="Rwanda football fans, Kigali sports fans, Africa football community">
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AbaFans | Every Match. Every Fan." />
 
-<!-- ===================== FAVICON / ICONS ===================== -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta
+    name="twitter:description"
+    content="Never watch alone. Never miss a moment. Discover matches, predictions, and venues with AbaFans."
+  />
 
-<!-- ===================== PRELOAD FONTS ===================== -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="twitter:image"
+    content="https://abafans.com/og-image.jpg"
+  />
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- App Identity -->
+  <meta name="application-name" content="AbaFans" />
+  <meta name="apple-mobile-web-app-title" content="AbaFans" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<!-- ===================== AEO / AI SEARCH OPTIMIZATION ===================== -->
-<meta name="ai-content-type" content="sports platform, football matchday information, venue discovery">
-<meta name="ai-summary" content="AbaFans helps users find football matches in Rwanda, predict scores, and discover where to watch games in local sports bars and venues.">
+  <!-- Search Intent -->
+  <meta
+    name="subject"
+    content="Football match discovery, predictions, venues and fan community"
+  />
 
-<!-- ===================== STRUCTURED DATA (ORGANIZATION) ===================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AbaFans",
-  "url": "https://abafans.rw",
-  "logo": "https://abafans.rw/logo.svg",
-  "description": "Rwanda football matchday platform for matches, predictions and where to watch.",
-  "sameAs": []
-}
-</script>
+  <meta
+    name="category"
+    content="Sports, Football, Entertainment, Community"
+  />
 
-<!-- ===================== STRUCTURED DATA (WEBSITE) ===================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "AbaFans",
-  "url": "https://abafans.rw",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://abafans.rw/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
+  <!-- AEO / GEO Signals -->
+  <meta
+    name="summary"
+    content="AbaFans helps football fans answer three questions: What's on tonight? Where should I watch? What is everyone predicting?"
+  />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AbaFans",
+    "url": "https://abafans.com",
+    "description": "A football fan platform helping people discover matches, predictions and venues.",
+    "inLanguage": "en",
+    "keywords": [
+      "football",
+      "world cup",
+      "football predictions",
+      "sports bars",
+      "where to watch football",
+      "football fans Rwanda"
+    ],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://abafans.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
-}
-</script>
+  </script>
 
-<!-- ===================== STRUCTURED DATA (LOCAL INTENT BOOST) ===================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SportsOrganization",
-  "name": "AbaFans",
-  "sport": "Football",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Rwanda"
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AbaFans",
+    "url": "https://abafans.com",
+    "logo": "https://abafans.com/logo.png",
+    "description": "A football fan community platform built around matchday experiences.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Rwanda"
+    }
   }
-}
-</script>
+  </script>
 
-<!-- ===================== EXTRA GEO + AI DISCOVERY SIGNAL ===================== -->
-<meta name="coverage" content="Rwanda, Kigali, Huye, Musanze, Rubavu">
-<meta name="audience" content="football fans, sports fans, young adults, students, professionals">
+  <!-- Brand Narrative for AI Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "AbaFans",
+    "slogan": "Every Match. Every Fan.",
+    "description": "A community-first football platform where fans discover matches, predictions and places to watch together.",
+    "brandPersonality": [
+      "Community First",
+      "Companion",
+      "Football Culture",
+      "Matchday Experience"
+    ]
+  }
+  </script>
 
-
-<style>
-
-:root{
---red:#E53935;
---dark:#1F2937;
---light:#F8F9FA;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:var(--light);
-color:var(--dark);
-}
-
-.container{
-width:min(1200px,92%);
-margin:auto;
-}
-
-header{
-background:white;
-position:sticky;
-top:0;
-z-index:999;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
-}
-
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:16px 0;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-font-weight:800;
-font-size:1.4rem;
-}
-
-.logo-icon{
-width:42px;
-height:42px;
-background:var(--red);
-border-radius:12px;
-}
-
-.nav-links{
-display:flex;
-gap:24px;
-}
-
-.nav-links a{
-text-decoration:none;
-color:var(--dark);
-font-weight:600;
-}
-
-.btn{
-background:var(--red);
-color:white;
-padding:12px 20px;
-border-radius:999px;
-text-decoration:none;
-font-weight:700;
-}
-
-.hero{
-padding:80px 0;
-}
-
-.hero-grid{
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:40px;
-align-items:center;
-}
-
-.hero h1{
-font-size:4rem;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.1rem;
-margin-bottom:30px;
-max-width:600px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
-}
-
-.live-badge{
-display:inline-block;
-background:#ffe5e5;
-color:var(--red);
-padding:8px 12px;
-border-radius:999px;
-font-weight:700;
-margin-bottom:15px;
-}
-
-.section{
-padding:80px 0;
-}
-
-.section-title{
-font-size:2.4rem;
-margin-bottom:15px;
-}
-
-.section-subtitle{
-color:#666;
-margin-bottom:40px;
-}
-
-.matches{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.match{
-background:white;
-padding:25px;
-border-radius:20px;
-border-left:5px solid var(--red);
-box-shadow:0 8px 25px rgba(0,0,0,.05);
-}
-
-.match h3{
-margin-bottom:10px;
-}
-
-.match-time{
-color:var(--red);
-font-weight:700;
-margin-bottom:15px;
-}
-
-.actions{
-display:flex;
-gap:10px;
-}
-
-.actions button{
-flex:1;
-padding:10px;
-border:none;
-border-radius:10px;
-font-weight:700;
-cursor:pointer;
-}
-
-.predict{
-background:var(--red);
-color:white;
-}
-
-.watch{
-background:#edf2f7;
-}
-
-.predictions{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.pred-card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 8px 25px rgba(0,0,0,.05);
-}
-
-.percent{
-font-size:2rem;
-font-weight:800;
-color:var(--red);
-}
-
-.venues{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.venue{
-background:white;
-overflow:hidden;
-border-radius:20px;
-box-shadow:0 8px 25px rgba(0,0,0,.05);
-}
-
-.venue-img{
-height:180px;
-background:linear-gradient(135deg,#E53935,#ff7774);
-}
-
-.venue-content{
-padding:20px;
-}
-
-.leaderboard{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 8px 25px rgba(0,0,0,.05);
-}
-
-.rank{
-display:flex;
-justify-content:space-between;
-padding:15px 0;
-border-bottom:1px solid #eee;
-}
-
-.cta{
-background:var(--dark);
-color:white;
-padding:100px 0;
-text-align:center;
-}
-
-.cta h2{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-.cta p{
-max-width:600px;
-margin:auto;
-margin-bottom:30px;
-}
-
-footer{
-padding:50px 0;
-text-align:center;
-background:white;
-}
-
-@media(max-width:768px){
-
-.hero-grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:2.5rem;
-}
-
-.nav-links{
-display:none;
-}
-
-}
-
-</style>
 </head>
 
 <body>
-
-<header>
-<div class="container nav">
-
-<div class="logo">
-<div class="logo-icon"></div>
-<span>AbaFans</span>
-</div>
-
-<nav class="nav-links">
-<a href="#matches">Matches</a>
-<a href="#predictions">Predictions</a>
-<a href="#watch">Watch</a>
-<a href="#leaderboard">Leaderboard</a>
-</nav>
-
-<a href="#" class="btn">Join WhatsApp</a>
-
-</div>
-</header>
-
-<section class="hero">
-<div class="container hero-grid">
-
-<div>
-<div class="live-badge">⚽ LIVE MATCHDAY</div>
-
-<h1>Rwanda's Home For Football Fans</h1>
-
-<p>
-See today's matches, predict scores, discover where to watch and follow football together.
-</p>
-
-<a href="#" class="btn">Today's Matches</a>
-</div>
-
-<div class="card">
-<h3>Next Kickoff</h3>
-<h2>Argentina vs Brazil</h2>
-<p>20:00 Kigali Time</p>
-<br>
-<div id="countdown" style="font-size:2rem;font-weight:800;color:#E53935">
-03:00:00
-</div>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="matches">
-<div class="container">
-
-<h2 class="section-title">Today's Matches</h2>
-<p class="section-subtitle">Football fixtures in Rwanda time.</p>
-
-<div class="matches">
-
-<div class="match">
-<h3>Argentina vs Brazil</h3>
-<div class="match-time">20:00</div>
-
-<div class="actions">
-<button class="predict">Predict</button>
-<button class="watch">Watch</button>
-</div>
-</div>
-
-<div class="match">
-<h3>France vs Germany</h3>
-<div class="match-time">22:00</div>
-
-<div class="actions">
-<button class="predict">Predict</button>
-<button class="watch">Watch</button>
-</div>
-</div>
-
-<div class="match">
-<h3>Spain vs England</h3>
-<div class="match-time">23:00</div>
-
-<div class="actions">
-<button class="predict">Predict</button>
-<button class="watch">Watch</button>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="section" id="predictions">
-<div class="container">
-
-<h2 class="section-title">Top Predictions</h2>
-
-<div class="predictions">
-
-<div class="pred-card">
-<div class="percent">34%</div>
-<h3>Argentina 2 - 1 Brazil</h3>
-</div>
-
-<div class="pred-card">
-<div class="percent">22%</div>
-<h3>1 - 1 Draw</h3>
-</div>
-
-<div class="pred-card">
-<div class="percent">18%</div>
-<h3>Brazil 2 - 0</h3>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="section" id="watch">
-<div class="container">
-
-<h2 class="section-title">Where To Watch</h2>
-
-<div class="venues">
-
-<div class="venue">
-<div class="venue-img"></div>
-<div class="venue-content">
-<h3>Kigali Sports Lounge</h3>
-<p>Big screens • Food • Drinks</p>
-</div>
-</div>
-
-<div class="venue">
-<div class="venue-img"></div>
-<div class="venue-content">
-<h3>Nyamirambo Fan Zone</h3>
-<p>Community watch experience</p>
-</div>
-</div>
-
-<div class="venue">
-<div class="venue-img"></div>
-<div class="venue-content">
-<h3>Remera Sports Bar</h3>
-<p>Popular football hotspot</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="section" id="leaderboard">
-<div class="container">
-
-<h2 class="section-title">Leaderboard</h2>
-
-<div class="leaderboard">
-
-<div class="rank">
-<span>🥇 Eric</span>
-<strong>42 pts</strong>
-</div>
-
-<div class="rank">
-<span>🥈 Diane</span>
-<strong>39 pts</strong>
-</div>
-
-<div class="rank">
-<span>🥉 Claude</span>
-<strong>35 pts</strong>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="cta">
-<div class="container">
-
-<h2>Join AbaFans On WhatsApp</h2>
-
-<p>
-Get match reminders, lineups, score updates and top predictions directly on WhatsApp.
-</p>
-
-<a href="#" class="btn">
-Join Channel
-</a>
-
-</div>
-</section>
-
-<footer>
-<div class="container">
-<p>© 2026 AbaFans • Rwanda's Football Community</p>
-</div>
-</footer>
-
-<script>
-
-let total = 10800;
-
-const countdown = document.getElementById("countdown");
-
-setInterval(() => {
-
-total--;
-
-const h = Math.floor(total / 3600);
-const m = Math.floor((total % 3600) / 60);
-const s = total % 60;
-
-countdown.innerHTML =
-String(h).padStart(2,'0') + ":" +
-String(m).padStart(2,'0') + ":" +
-String(s).padStart(2,'0');
-
-},1000);
-
-</script>
-
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
