@@ -48,7 +48,7 @@ export default function ProfilePage() {
                 )}
                 {userProfile.website && (
                   <a href={userProfile.website} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: '12px', color: 'var(--brand-red)' }}>
-                    <LuLink size={12} /> abafans.rw
+                    <LuLink size={12} /> abafans.netlify.app
                   </a>
                 )}
                 <span style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: '12px', color: 'var(--text-muted)' }}>

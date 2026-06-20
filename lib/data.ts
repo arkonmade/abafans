@@ -259,10 +259,10 @@ export const userProfile: UserProfile = {
   pic: 'https://cdn.dribbble.com/users/24593303/avatars/normal/756dab07ef0b0519b20654d29eba783d.png?1766760445',
   username: 'abafan_kigali',
   fullname: 'Arkon Studio',
-  email: 'fan@abafans.rw',
+  email: 'fan@abafans.netlify.app',
   bio: 'Football fanatic based in Kigali. Never miss a match day. Predictions addict.',
   location: 'Kigali, Rwanda',
-  website: 'https://abafans.rw',
+  website: 'https://abafans.netlify.app',
   role: 'Fan',
   company: 'AbaFans',
   joinedAt: '2026-01-15',
@@ -279,7 +279,7 @@ export const userProfile: UserProfile = {
 export const brandInfo = {
   name: 'AbaFans',
   phoneMain: '250788967812',
-  emailMain: 'hello@abafans.rw',
+  emailMain: 'hello@abafans.netlify.app',
   socials: { x: 'abafans', facebook: 'abafans', instagram: 'abafans', youtube: 'abafans' },
 };
 
@@ -350,7 +350,7 @@ export function buildWhatsAppMatchShare(matchId: string): string {
       ? `${match.homeScore} - ${match.awayScore}`
       : 'TBD';
   const text = encodeURIComponent(
-    `⚽ ${match.competition} | ${match.stage}\n${home?.name} vs ${away?.name}\nScore: ${scoreStr}\n📍 ${match.stadium}\n\nWatch & predict on AbaFans 🇷🇼\nhttps://abafans.rw`
+    `⚽ ${match.competition} | ${match.stage}\n${home?.name} vs ${away?.name}\nScore: ${scoreStr}\n📍 ${match.stadium}\n\nWatch & predict on AbaFans 🇷🇼\nhttps://abafans.netlify.app`
   );
   return `https://wa.me/?text=${text}`;
 }
@@ -359,7 +359,7 @@ export function buildWhatsAppVenueShare(venueId: string): string {
   const venue = getVenueById(venueId);
   if (!venue) return 'https://wa.me/';
   const text = encodeURIComponent(
-    `📍 ${venue.name} - ${venue.place}\n🖥️ ${venue.screens} screens | 👥 ${venue.capacity} capacity\nEntry: ${venue.contact.entry} RWF\n\nFind more venues on AbaFans 🇷🇼\nhttps://abafans.rw`
+    `📍 ${venue.name} - ${venue.place}\n🖥️ ${venue.screens} screens | 👥 ${venue.capacity} capacity\nEntry: ${venue.contact.entry} RWF\n\nFind more venues on AbaFans 🇷🇼\nhttps://abafans.netlify.app`
   );
   return `https://wa.me/?text=${text}`;
 }
