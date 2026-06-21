@@ -1,0 +1,26 @@
+{
+  "name": "AbaFans",
+  "short_name": "AbaFans",
+  "description": "Your football match-day companion. Predict scores, discover venues, and follow today's matches.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0a",
+  "theme_color": "#ff4d4f",
+  "categories": ["sports", "entertainment", "social"],
+  "lang": "en-RW",
+  "scope": "/",
+  "icons": [
+    { "src": "/icon.svg",     "sizes": "any",         "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/favicon.svg",  "sizes": "any",         "type": "image/svg+xml" }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    { "name": "Today's Matches", "url": "/matches",     "description": "See all of today's football fixtures"   },
+    { "name": "Leaderboard",     "url": "/leaderboard", "description": "Check the top fan predictors"           },
+    { "name": "Find Venues",     "url": "/venues",      "description": "Discover where to watch near you"       },
+    { "name": "My Profile",      "url": "/profile",     "description": "Your predictions and stats"             }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

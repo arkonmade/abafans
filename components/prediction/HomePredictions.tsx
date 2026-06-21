@@ -2,12 +2,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { LuUsers, LuLandPlot } from 'react-icons/lu';
-import { predictionsList, teamsList } from '@/lib/data';
+import { predictionsList, enrichedTeams } from '@/lib/data';
 
 export default function HomePredictions() {
   const [picks, setPicks] = useState<Record<string, 'home' | 'away' | null>>({});
 
-  const getTeam = (id: string) => teamsList.find(t => t.id === id);
+  const getTeam = (id: string) => enrichedTeams.find(t => t.id === id);
 
   const toggle = (predId: string, side: 'home' | 'away') => {
     setPicks(prev => ({ ...prev, [predId]: prev[predId] === side ? null : side }));
